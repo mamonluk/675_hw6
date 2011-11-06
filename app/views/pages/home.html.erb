@@ -1,0 +1,12 @@
+<h1>Pages#home</h1>
+
+<h1>Sign up   <%= @title %></h1>
+
+<%= form_tag('create', :method=>'post') do %>
+<div class="field">
+	<%= label_tag 'Choose Query' %>
+	<%= text_field_tag 'password' %>
+	</div>
+	
+	<p><%=submit_tag 'Submit'%></p>
+<% end %>
